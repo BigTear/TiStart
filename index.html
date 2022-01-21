@@ -1,141 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport"
-			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>Index.html</title>
-		<!-- style -->
-		<style type="text/css">
-			body {
-				background-image: url(img/green1.jpg);
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-
-			#content {
-				text-align: center;
-			}
-
-			.search-part {
-				margin-top: 150px;
-			}
-
-			.search-bar {
-				margin-left: 25%;
-				width: 50%;
-				height: 40px;
-				box-shadow: 0px 0px 5px 5px #c4c8c8;
-				border-radius: 5px;
-			}
-
-			#search_input {
-				width: 100%;
-				height: 40px;
-				padding: 0 5px;
-				border: none;
-				outline: 0;
-				font-size: 16px;
-				color: #4a4266;
-				background-color: transparent;
-			}
-
-			#search-submit {
-				height: 40px;
-				border: none;
-				outline: 0;
-				font-size: 18px;
-				background-color: transparent;
-			}
-
-			.bdSug_app {
-				display: none !important;
-
-			}
-
-			.bdSug_wpr {
-				border: 2px solid #e3e3e3 !important;
-				border-radius: 5px !important;
-			}
-
-			.bdSug_pre {
-				line-height: 20px !important;
-			}
-
-			.bdSug_wpr table {
-				padding: 5px !important;
-			}
-
-			.bdSug_wpr td {
-				padding: 6px 2px !important;
-			}
-
-			.one {
-				margin-top: 20px;
-				padding: 0px 20px;
-				color: #4a4266;
-			}
-
-			.one .l {
-				display: none !important;
-			}
-
-			.iciba_common_laba,
-			.iciba_common_top_lx {
-				display: none !important
-			}
-
-			.ciba_ds_juzi {
-				width: 98% !important;
-				height: auto !important;
-				float: none !important;
-			}
-
-			.ciba_ds_juzi a {
-				text-decoration: none;
-				display: block;
-			}
-
-			.ciba_ds_con {
-				line-height: 24px !important;
-			}
-		</style>
-		</style>
-		<!-- style -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>TiStart</title>
+		<script type="text/javascript" src="js/vue.js"></script>
 	</head>
 	<body>
-		<div id="content">
-			<!-- <div id="logo"><a href="edge://history/"></a><img src="img/iu1.jpg" alt="iu"> </div>-->
-			<div class="search-part">
-				<form action="http://www.baidu.com/s" class="search-bar">
-					<input type="hidden" name="form" id="" value="edge" />
-					<input type="hidden" name="ie" id="" value="utf-8" />
-					<input type="text" name="word" class="search" id="search-input" autocomplete="off" baiduSug="1" />
-					<input type="submit" name="" id="search-submit" value="↵" />
-
-				</form>
-			</div>
-			<div class="one">
-				<script type="text/javascript"
-					src="http://open.iciba.com/ds_open.php?id=54055&name=%E4%BF%9D%E5%BE%B7%E5%9C%A8%E7%BA%BF&auth=226994D1666A2E1E3E3D71C79CA27C72"
-					charset="utf-8"></script>
-			</div>
-		</div>
-		<script charset="gbk" src="https://www.baidu.com/js/opensug.js"></script>
 		<script type="text/javascript">
-			BaiduSuggestion.bind('search_submit', {
-				"XOffset": "0", // Proposal frame position X offset, unit px.
-				"YOffset": "0", // Prompt box position vertical Y offset, unit px.
-				"fontColor": "#ff0000", // Prompt text color.
-				"fontColorHI": "#0000ff", // Prompt box highlight text color when selected.
-				"fontSize": "14px", // font size
-				"fontFamily": "Microsoft YaHei", // Text fontFamily.
-				"borderColor": "#008000", // Prompt box border color.
-				"bgcolorHI": "#f0f0f0", // Prompt box highlights the selected color.
-				"sugSubmit": true // Whether to submit the form when the entry in the prompt box is selected.
-			}, function(Callback) {
-				console.log(Callback);
-			})
+			Vue.config.productionTip = false
+
 		</script>
 	</body>
 </html>
